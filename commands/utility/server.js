@@ -9,9 +9,9 @@ module.exports={
             .setDescription("Información Servidor")
             .setColor("#ff0000")
             .setThumbnail(sicon)
-            .addField("Nombre Servidor", message.guild.name)
+            .addField("Nombre", message.guild.name)
             .addField("Creado", message.guild.createdAt)
-            .addField("Tu entraste", message.member.joinedAt)
+            .addField("Entrada", message.member.joinedAt)
             .addField("Total Miembros", message.guild.memberCount)
 
         const messagePromise = message.channel.send(serverEmbed);
