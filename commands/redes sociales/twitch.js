@@ -9,7 +9,6 @@ module.exports = {
 
     let Twitch = new MessageEmbed()
       .setTitle(`Twitch Nereko`)
-      .setThumbnail('https://images-ext-1.discordapp.net/external/xPxIuYtAJnrHww0rjZVFAdCMhybXLOejyNNt15kgDok/https/pbs.twimg.com/profile_images/1355547041573826564/T2b41Tv__bigger.jpg')
       .setDescription("https://www.twitch.tv/nerekoo")
       .setColor("#6441a5");
 
