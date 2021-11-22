@@ -44,7 +44,7 @@ const validatePermissions = (permissions) => {
 
   for (const permission of permissions) {
     if (!validPermissions.includes(permission)) {
-      throw new Error(`Unknown permission node "${permission}"`)
+      throw new Error(`Permiso desconocido "${permission}"`)
     }
   }
 }
@@ -53,7 +53,7 @@ module.exports = (client, commandOptions) => {
   let {
     commands,
     expectedArgs = '',
-    permissionError = 'You do not have permission to run this command.',
+    permissionError = 'No tienes permisos para usar este comando.',
     minArgs = 0,
     maxArgs = null,
     permissions = [],
@@ -106,7 +106,7 @@ module.exports = (client, commandOptions) => {
 
           if (!role || !member.roles.cache.has(role.id)) {
             message.reply(
-              `You must have the "${requiredRole}" role to use this command.`
+              `Debes tener el **role** "${requiredRole}" para usar este comando.`
             )
             return
           }
@@ -124,7 +124,7 @@ module.exports = (client, commandOptions) => {
           (maxArgs !== null && arguments.length > maxArgs)
         ) {
           message.reply(
-            `Incorrect syntax! Use ${prefix}${alias} ${expectedArgs}`
+            `Sintasis incorrecta! Use ${prefix}${alias} ${expectedArgs}`
           )
           return
         }
