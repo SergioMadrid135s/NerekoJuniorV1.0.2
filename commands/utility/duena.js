@@ -9,8 +9,7 @@ module.exports = {
 
     let Dueña = new MessageEmbed()
       .setTitle(`Dueña`)
-      .setThumbnail('https://cdn.discordapp.com/avatars/502933541290639360/6b65c207e4674701c147d61aea42e64f.png?size=1024')
-      .setDescription('Dueña de **"El rincon de Nereko"**')
+      .setDescription('Dueña de __"El rincon de Nereko"__')
       .addField(`Mi Discord`, `Nereko#5561`, true)
       .setColor("#b9a3e3");
 
