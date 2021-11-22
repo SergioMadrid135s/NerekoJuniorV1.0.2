@@ -9,7 +9,6 @@ module.exports = {
 
     let Twitter = new MessageEmbed()
       .setTitle(`Twitter Nereko`)
-      .setThumbnail('https://images-ext-1.discordapp.net/external/xPxIuYtAJnrHww0rjZVFAdCMhybXLOejyNNt15kgDok/https/pbs.twimg.com/profile_images/1355547041573826564/T2b41Tv__bigger.jpg')
       .setDescription("https://twitter.com/Nereko2")
       .setColor("#00acee");
 
