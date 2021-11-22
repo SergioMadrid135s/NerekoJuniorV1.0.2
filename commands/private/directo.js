@@ -7,6 +7,6 @@ module.exports={
   if(!message.member.hasPermission('ADMINISTRATOR')) return
      args.join(" ");
      message.delete().catch(() => {});
-     message.channel.send(`Estoy en directo gente! Iros uniendo https://www.twitch.tv/nerekoo @everyone`);
+     message.channel.send(`@everyone Nerekoo esta en directo, ir entrando que empezamos ya! https://www.twitch.tv/nerekoo`);
   }
 }
