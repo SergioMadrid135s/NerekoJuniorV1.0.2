@@ -8,7 +8,7 @@ const loadCommands = require('./commands/load-commands')
 
 client.on("ready", () => {
   console.log(`${client.user.username} Listo!`);
-  client.user.setActivity(`n!help | ${client.users.cache.size} usuarios | ${client.guilds.cache.size} servidores | Version 1.0.3`, { type: "PLAYING" });
+  client.user.setActivity(`n!help | ${client.users.cache.size} usuarios | ${client.guilds.cache.size} servidores | Version 2`, { type: "PLAYING" });
 
 
   loadCommands(client)
