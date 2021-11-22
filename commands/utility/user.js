@@ -11,9 +11,9 @@ module.exports={
             .setDescription("Información de tu perfil")
             .setColor("#ff0000")
             .setThumbnail(sicon)
-            .addField("Tu Nombre:", message.author.tag)
-            .addField("Tu ID:", message.author.id)
-            .addField("Dia Creada:", message.author.createdAt)
+            .addField("Nombre:", message.author.tag)
+            .addField("ID:", message.author.id)
+            .addField("Dia Creación:", message.author.createdAt)
             .addField("Entrada Servidor:", message.author.joinedAt)
             .setThumbnail(message.author.displayAvatarURL())
 
