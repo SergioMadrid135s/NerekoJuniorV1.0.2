@@ -7,16 +7,16 @@ module.exports={
     description: "Saber información de tu perfil discord.",
     callback(message) {
         let sicon = message.guild.iconURL;
-        let serverEmbed = new MessageEmbed()
-            .setDescription("Información de tu perfil")
-            .setColor("#ff0000")
-            .setThumbnail(sicon)
-            .addField("Nombre:", message.author.tag)
-            .addField("ID:", message.author.id)
-            .addField("Dia Creación:", message.author.createdAt)
-            .addField("Entrada Servidor:", message.author.joinedAt)
-            .setThumbnail(message.author.displayAvatarURL())
+        let user = new MessageEmbed()
+            user.setDescription("Información de tu perfil")
+            user.setColor("#ff0000")
+            user.setThumbnail(sicon)
+            user.addField("Nombre:", message.author.tag)
+            user.addField("ID:", message.author.id)
+            user.addField("Dia Creación:", message.author.createdAt)
+            user.addField("Entrada Servidor:", message.author.joinedAt)
+            user.setThumbnail(message.author.displayAvatarURL())
 
-        const messagePromise = message.channel.send(serverEmbed);
+        const messagePromise = message.channel.send(user);
     },
 };
