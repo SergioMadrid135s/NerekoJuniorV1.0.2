@@ -14,6 +14,6 @@ module.exports = {
 
       insta.setTimestamp();
 
-    return message.channel.send(Insta).catch(console.error);
+    return message.channel.send(insta).catch(console.error);
   }
 };
