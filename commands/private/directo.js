@@ -10,12 +10,12 @@ module.exports = {
     if(!message.member.hasPermission('ADMINISTRATOR')) return
     let commands = message.client.commands;
 
-    let Directo = new MessageEmbed()
-      .setDescription("@everyone Nerekoo esta en directo, ir entrando que empezamos ya! https://www.twitch.tv/nerekoo")
-      .setColor("#4200FF");
+    let directo = new MessageEmbed()
+      directo.setDescription("@everyone Nerekoo esta en directo, ir entrando que empezamos ya! https://www.twitch.tv/nerekoo")
+      directo.setColor("#4200FF");
 
-      Directo.setTimestamp();
+      directo.setTimestamp();
 
-    return message.channel.send(Directo).catch(console.error);
+    return message.channel.send(directo).catch(console.error);
   }
 };
