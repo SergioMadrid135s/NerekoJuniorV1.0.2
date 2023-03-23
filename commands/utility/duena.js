@@ -7,14 +7,14 @@ module.exports = {
   callback(message) {
     let commands = message.client.commands;
 
-    let Dueña = new MessageEmbed()
-      .setTitle(`Dueña`)
-      .setDescription('Dueña de __"El rincon de Nereko"__')
-      .addField(`Mi Discord`, `Nereko#5561`, true)
-      .setColor("#b9a3e3");
+    let dueña = new MessageEmbed()
+      dueña.setTitle(`Dueña`)
+      dueña.setDescription('Dueña de __"El rincon de Nereko"__')
+      dueña.addField(`Mi Discord`, `Nereko#5561`, true)
+      dueña.setColor("#b9a3e3");
 
-      Dueña.setTimestamp();
+      dueña.setTimestamp();
 
-    return message.channel.send(Dueña).catch(console.error);
+    return message.channel.send(dueña).catch(console.error);
   }
 };
