@@ -7,12 +7,12 @@ module.exports = {
   callback(message) {
     let commands = message.client.commands;
 
-    let Insta = new MessageEmbed()
-      .setTitle(`Instagram Nereko`)
-      .setDescription("https://www.instagram.com/_nereko_/")
-      .setColor("#CC6721");
+    let insta = new MessageEmbed()
+      insta.setTitle(`Instagram Nereko`)
+      insta.setDescription("https://www.instagram.com/_nereko_/")
+      insta.setColor("#CC6721");
 
-      Insta.setTimestamp();
+      insta.setTimestamp();
 
     return message.channel.send(Insta).catch(console.error);
   }
