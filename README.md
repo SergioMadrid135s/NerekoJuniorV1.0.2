@@ -1,4 +1,4 @@
-# NerekoJunior_V2
+# NerekoJuniorV2
 
 Realizado por SergioMadrid135
 
