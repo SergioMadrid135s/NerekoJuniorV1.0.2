@@ -7,13 +7,13 @@ module.exports = {
   callback(message) {
     let commands = message.client.commands;
 
-    let Twitter = new MessageEmbed()
-      .setTitle(`Twitter Nereko`)
-      .setDescription("https://twitter.com/Nereko2")
-      .setColor("#00acee");
+    let twitter = new MessageEmbed()
+      twitter.setTitle(`Twitter Nereko`)
+      twitter.setDescription("https://twitter.com/Nereko2")
+      twitter.setColor("#00acee");
 
-      Twitter.setTimestamp();
+      twitter.setTimestamp();
 
-    return message.channel.send(Twitter).catch(console.error);
+    return message.channel.send(twitter).catch(console.error);
   }
 };
