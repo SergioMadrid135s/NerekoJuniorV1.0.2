@@ -8,11 +8,11 @@ module.exports = {
     let subreddits = ["comedyheaven", "dank", "meme", "memes"];
     let subreddit = subreddits[Math.floor(Math.random() * subreddits.length)];
     let img = await api(subreddit, true);
-    const Embed = new MessageEmbed()
-      .setTitle(`Meme proveniente de r/${subreddit}`)
-      .setURL(`https://reddit.com/r/${subreddit}`)
-      .setColor("RANDOM")
-      .setImage(img);
-    await message.channel.send(Embed);
+    const meme = new MessageEmbed()
+      meme.setTitle(`Meme proveniente de r/${subreddit}`)
+      meme.setURL(`https://reddit.com/r/${subreddit}`)
+      meme.setColor("RANDOM")
+      meme.setImage(img);
+    await message.channel.send(meme);
   },
 };
