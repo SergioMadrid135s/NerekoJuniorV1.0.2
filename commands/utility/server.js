@@ -5,15 +5,15 @@ module.exports={
     description: "Información del Servidor",
     callback(message) {
         let sicon = message.guild.iconURL;
-        let serverEmbed = new MessageEmbed()
-            .setDescription("Información Servidor")
-            .setColor("#ff0000")
-            .setThumbnail(sicon)
-            .addField("Nombre", message.guild.name)
-            .addField("Creado", message.guild.createdAt)
-            .addField("Entrada", message.member.joinedAt)
-            .addField("Total Miembros", message.guild.memberCount)
+        let server = new MessageEmbed()
+            server.setDescription("Información Servidor")
+            server.setColor("#ff0000")
+            server.setThumbnail(sicon)
+            server.addField("Nombre", message.guild.name)
+            server.addField("Creado", message.guild.createdAt)
+            server.addField("Entrada", message.member.joinedAt)
+            server.addField("Total Miembros", message.guild.memberCount)
 
-        const messagePromise = message.channel.send(serverEmbed);
+        const messagePromise = message.channel.send(server);
     },
 };
