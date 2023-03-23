@@ -7,7 +7,7 @@ const config = require('./config.json')
 const loadCommands = require('./commands/load-commands')
 
 client.on("ready", () => {
-  console.log(`${client.user.username} Listo!`);
+  console.log(`${client.user.username} Bot listo y activo!`);
   client.user.setActivity(`n!help | ${client.users.cache.size} usuarios | ${client.guilds.cache.size} servidores`, { type: "PLAYING" });
 
 
