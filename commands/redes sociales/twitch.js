@@ -14,6 +14,6 @@ module.exports = {
 
       twitch.setTimestamp();
 
-    return message.channel.send(Twitch).catch(console.error);
+    return message.channel.send(twitch).catch(console.error);
   }
 };
