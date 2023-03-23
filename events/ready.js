@@ -3,6 +3,6 @@ module.exports = {
 	name: 'ready',
 	once: true,
 	execute(client) {
-		console.log(`Listo! Registrado como: ${client.user.tag}`);
+		console.log(`Bot listo! Registrado como: ${client.user.tag}`);
 	},
 };
