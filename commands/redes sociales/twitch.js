@@ -7,12 +7,12 @@ module.exports = {
   callback(message) {
     let commands = message.client.commands;
 
-    let Twitch = new MessageEmbed()
-      .setTitle(`Twitch Nereko`)
-      .setDescription("https://www.twitch.tv/nerekoo")
-      .setColor("#6441a5");
+    let twitch = new MessageEmbed()
+      twitch.setTitle(`Twitch Nereko`)
+      twitch.setDescription("https://www.twitch.tv/nerekoo")
+      twitch.setColor("#6441a5");
 
-      Twitch.setTimestamp();
+      twitch.setTimestamp();
 
     return message.channel.send(Twitch).catch(console.error);
   }
