@@ -10,11 +10,11 @@ module.exports = {
         let avatar = member.displayAvatarURL({size: 1024})
 
 
-        const embed = new Discord.MessageEmbed()
+        const avatar = new Discord.MessageEmbed()
         .setTitle(`Avatar del usuario __*${member.username}*__`)
         .setImage(avatar)
         .setColor("RANDOM")
 
-        message.channel.send(embed);
+        message.channel.send(avatar);
     }
 }
